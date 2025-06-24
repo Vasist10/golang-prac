@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather Widget</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html, body {
+      min-width: 300px;
+      min-height: 320px;
+      background: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="weather-widget" id="widget">
+    <div class="main-info" id="mainInfo">
+      <div id="weatherIcon">🌡️</div>
+      <div id="temp">--°C</div>
+      <div id="location">---</div>
+      <div class="menu-button" id="menuBtn">⋮</div>
+    </div>
+
+    <div class="settings-panel" id="settingsPanel" style="display: none;">
+      <input type="text" id="cityInput" placeholder="Enter city..." />
+      <button id="updateBtn">Update</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
